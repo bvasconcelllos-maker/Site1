@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Designer Vasconcelos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:
+    radial-gradient(circle at 20% 20%, rgba(37,99,235,0.5), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(36, 8, 14, 0.45), transparent 50%),
+    radial-gradient(circle at 50% 85%, rgba(34,211,238,0.4), transparent 55%),
+    linear-gradient(180deg, #0B0F1A, #0F172A);
+
+  --panel: rgba(15,23,42,0.75);
+  --border: rgba(255,255,255,0.1);
+
+  --text: #E5E7EB;
+  --muted: #94A3B8;
+
+  --primary: #2563EB;
+  --accent: #E11D48;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== HEADER ===== */
+header{
+  max-width:1200px;
+  margin:40px auto 30px;
+  padding:24px;
+  background: rgba(255,255,255,0.05);
+  border:1px solid var(--border);
+  border-radius:22px;
+  backdrop-filter: blur(16px);
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+header img{
+  width:60px;
+}
+
+header h1{
+  font-size:1.6rem;
+  font-weight:600;
+}
+
+header p{
+  font-size:0.95rem;
+  color:var(--muted);
+  margin-top:4px;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 24px;
+}
+
+/* ===== INTRO ===== */
+.intro{
+  margin:40px 0 30px;
+  max-width:650px;
+}
+
+.intro h2{
+  font-size:1.4rem;
+  font-weight:500;
+}
+
+.intro p{
+  margin-top:10px;
+  line-height:1.5;
+  color:var(--muted);
+}
+
+/* ===== CAROUSEL ===== */
+.carousel{
+  position:relative;
+  overflow:hidden;
+  margin:30px 0 50px;
+}
+
+.track{
+  display:flex;
+  gap:16px;
+  transition: transform 0.5s ease;
+}
+
+.card{
+  min-width:300px;
+  background: var(--panel);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:14px;
+  background:#11111100;
+}
+
+.card h3{
+  font-size:1rem;
+  font-weight:500;
+}
+
+.card p{
+  font-size:0.9rem;
+  color:var(--muted);
+  line-height:1.4;
+}
+
+/* ===== BUTTONS ===== */
+.controls{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+
+.controls button{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:8px 14px;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.controls button:hover{
+  border-color:var(--primary);
+}
+
+/* ===== SECTIONS ===== */
+.section{
+  margin:60px 0;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:20px;
+}
+
+.block{
+  background: var(--panel);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:22px;
+}
+
+.block h3{
+  font-size:1.05rem;
+  margin-bottom:8px;
+}
+
+.block p{
+  font-size:0.9rem;
+  line-height:1.45;
+  color:var(--muted);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  margin:60px auto 30px;
+  text-align:center;
+  font-size:0.85rem;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- LOGO PNG -->
+  <img src="LOGO DV.png" alt="Designer Vasconcelos">
+
+  <div>
+    <h1>Designer Vasconcelos</h1>
+    <p>Design gráfico, visual e experiências criativas</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- TELA 1 -->
+  <section class="intro">
+    <h2>Design com identidade, clareza e propósito</h2>
+    <p>
+      Cada projeto é desenvolvido com foco em estética, organização
+      e comunicação eficiente — sem excesso, sem ruído.
+    </p>
+  </section>
+
+  <!-- TELA 2 – CAROUSEL -->
+  <section class="carousel">
+    <div class="track" id="track">
+      <div class="card">
+        <img src="LOGO 2.png">
+        <h3>Identidade Visual</h3>
+        <p>Marcas consistentes, profissionais e memoráveis.</p>
+      </div>
+
+      <div class="card">
+        <img src="LOGO 3.png">
+        <h3>Design Digital</h3>
+        <p>Layouts modernos com leitura clara e hierarquia visual.</p>
+      </div>
+
+      <div class="card">
+        <img src="LOGO 4_Prancheta 1_Prancheta 1.png">
+        <h3>Conteúdo Criativo</h3>
+        <p>Artes pensadas para engajar e comunicar.</p>
+      </div>
+
+      <div class="card">
+        <img src="LOGO 5.png">
+        <h3>Projetos 3D</h3>
+        <p>Exploração visual e profundidade estética.</p>
+      </div>
+
+    <div class="card">
+        <img src="LOGO 6.png">
+        <h3>Audiovisual</h3>
+        <p>After effects / premiere</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button onclick="move(1)">‹</button>
+      <button onclick="move(-1)">›</button>
+    </div>
+  </section>
+
+  <!-- TELA 3 -->
+  <section class="section">
+    <div class="block">
+      <h3>Processo</h3>
+      <p>Organização, conceito e execução alinhados desde o início.</p>
+    </div>
+    <div class="block">
+      <h3>Visão</h3>
+      <p>Design como ferramenta estratégica, não apenas estética.</p>
+    </div>
+    <div class="block">
+      <h3>Compromisso</h3>
+      <p>Entrega clara, profissional e dentro do propósito do projeto.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 • Designer Vasconcelos
+</footer>
+
+<script>
+let position = 0;
+function move(dir){
+  const track = document.getElementById("track");
+  const cardWidth = 316;
+  position += dir * cardWidth;
+  const max = -(track.scrollWidth - track.parentElement.offsetWidth);
+  if(position > 0) position = 0;
+  if(position < max) position = max;
+  track.style.transform = `translateX(${position}px)`;
+}
+</script>
+
+</body>
+</html>
