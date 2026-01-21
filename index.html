@@ -95,6 +95,18 @@ header p{
   margin:30px 0 50px;
 }
 
+/* Remove sublinhado e cor padrão dos links dos cards */
+.carousel a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.carousel a:hover{
+  color: inherit;
+}
+
+
 .track{
   display:flex;
   gap:16px;
@@ -134,6 +146,7 @@ header p{
 /* ===== BUTTONS ===== */
 .controls{
   display:flex;
+  justify-content: center;
   gap:10px;
   margin-top:12px;
 }
@@ -213,36 +226,46 @@ footer{
   <!-- TELA 2 – CAROUSEL -->
   <section class="carousel">
     <div class="track" id="track">
-      <div class="card">
+      <a href="index2.html">
+        <div class="card">
         <img src="LOGO 2.png">
         <h3>Identidade Visual</h3>
         <p>Marcas consistentes, profissionais e memoráveis.</p>
       </div>
-
-      <div class="card">
+      </a>
+      
+      <a href="index3.html">
+        <div class="card">
         <img src="LOGO 3.png">
         <h3>Design Digital</h3>
         <p>Layouts modernos com leitura clara e hierarquia visual.</p>
       </div>
+      </a>
 
-      <div class="card">
+      <a href="index4.html">
+        <div class="card">
         <img src="LOGO 4_Prancheta 1_Prancheta 1.png">
         <h3>Conteúdo Criativo</h3>
         <p>Artes pensadas para engajar e comunicar.</p>
       </div>
+      </a>
 
+    <a href="index5.html">
       <div class="card">
         <img src="LOGO 5.png">
         <h3>Projetos 3D</h3>
         <p>Exploração visual e profundidade estética.</p>
       </div>
+      </a>
 
-    <div class="card">
+    <a href="index6.html">
+      <div class="card">
         <img src="LOGO 6.png">
         <h3>Audiovisual</h3>
-        <p>After effects / premiere</p>
+        <p>Experiências audiovisuais criadas para conectar marcas e pessoas.</p>
       </div>
     </div>
+    </a>
 
     <div class="controls">
       <button onclick="move(1)">‹</button>

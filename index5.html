@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Identidade Visual • Designer Vasconcelos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== REUTILIZE O MESMO CSS DA HOME ===== */
+:root{
+  --bg:
+    radial-gradient(circle at 20% 20%, rgba(37,99,235,0.5), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(36, 8, 14, 0.45), transparent 50%),
+    radial-gradient(circle at 50% 85%, rgba(34,211,238,0.4), transparent 55%),
+    linear-gradient(180deg, #0B0F1A, #0F172A);
+
+  --panel: rgba(15,23,42,0.75);
+  --border: rgba(255,255,255,0.1);
+
+  --text: #E5E7EB;
+  --muted: #94A3B8;
+  --primary: #2563EB;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter", sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ===== HEADER ===== */
+header{
+  max-width:1200px;
+  margin:40px auto;
+  padding:24px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border);
+  border-radius:22px;
+  backdrop-filter: blur(16px);
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+header img{
+  width:60px;
+}
+
+header h1{
+  font-size:1.5rem;
+}
+
+header a{
+  color:var(--muted);
+  font-size:0.9rem;
+  text-decoration:none;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 24px;
+}
+
+/* ===== CONTEÚDO ===== */
+.page{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:40px;
+  margin-bottom:60px;
+}
+
+.page h2{
+  font-size:1.4rem;
+  margin-bottom:12px;
+}
+
+.page p{
+  color:var(--muted);
+  line-height:1.6;
+  max-width:720px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:0.85rem;
+  margin-bottom:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="LOGO DV.png" alt="Designer Vasconcelos">
+
+  <div>
+    <h1>Identidade Visual</h1>
+    <a href="index.html">← Voltar para home</a>
+  </div>
+</header>
+
+<div class="container">
+  <section class="page">
+    <h2>Projetos 3D que ampliam a experiência visual</h2>
+    <p>
+      Criação de imagens e ambientes tridimensionais que valorizam produtos e conceitos.
+      Os projetos unem realismo, estética e 
+      técnica para entregar apresentações imersivas, 
+      versáteis e aplicáveis a diferentes formatos digitais.
+    </p>
+  </section>
+</div>
+
+<footer>
+  © 2026 • Designer Vasconcelos
+</footer>
+
+</body>
+</html>
