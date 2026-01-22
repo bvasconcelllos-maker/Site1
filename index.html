@@ -95,17 +95,11 @@ header p{
   margin:30px 0 50px;
 }
 
-/* Remove sublinhado e cor padrão dos links dos cards */
 .carousel a{
   text-decoration: none;
   color: inherit;
   display: block;
 }
-
-.carousel a:hover{
-  color: inherit;
-}
-
 
 .track{
   display:flex;
@@ -122,6 +116,11 @@ header p{
   display:flex;
   flex-direction:column;
   gap:12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.04);
 }
 
 .card img{
@@ -129,7 +128,6 @@ header p{
   height:190px;
   object-fit:cover;
   border-radius:14px;
-  background:#11111100;
 }
 
 .card h3{
@@ -190,9 +188,45 @@ header p{
   color:var(--muted);
 }
 
+/* ===== CTA WHATSAPP ===== */
+.cta-whatsapp{
+  margin:80px auto 40px;
+  text-align:center;
+}
+
+.cta-whatsapp h3{
+  font-size:1.2rem;
+  font-weight:500;
+  margin-bottom:14px;
+}
+
+.cta-whatsapp p{
+  font-size:0.95rem;
+  color:var(--muted);
+  margin-bottom:22px;
+}
+
+.cta-whatsapp a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 26px;
+  border-radius:16px;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid var(--border);
+  background: rgba(15,23,42,0.6);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cta-whatsapp a:hover{
+  transform: scale(1.05);
+  border-color:#25D366;
+}
+
 /* ===== FOOTER ===== */
 footer{
-  margin:60px auto 30px;
+  margin:40px auto 30px;
   text-align:center;
   font-size:0.85rem;
   color:var(--muted);
@@ -203,9 +237,7 @@ footer{
 <body>
 
 <header>
-  <!-- LOGO PNG -->
   <img src="LOGO DV.png" alt="Designer Vasconcelos">
-
   <div>
     <h1>Designer Vasconcelos</h1>
     <p>Design gráfico, visual e experiências criativas</p>
@@ -214,7 +246,6 @@ footer{
 
 <div class="container">
 
-  <!-- TELA 1 -->
   <section class="intro">
     <h2>Design com identidade, clareza e propósito</h2>
     <p>
@@ -223,49 +254,50 @@ footer{
     </p>
   </section>
 
-  <!-- TELA 2 – CAROUSEL -->
   <section class="carousel">
     <div class="track" id="track">
+
       <a href="index2.html">
         <div class="card">
-        <img src="LOGO 2.png">
-        <h3>Identidade Visual</h3>
-        <p>Marcas consistentes, profissionais e memoráveis.</p>
-      </div>
+          <img src="LOGO 2.png">
+          <h3>Identidade Visual</h3>
+          <p>Marcas consistentes, profissionais e memoráveis.</p>
+        </div>
       </a>
-      
+
       <a href="index3.html">
         <div class="card">
-        <img src="LOGO 3.png">
-        <h3>Design Digital</h3>
-        <p>Layouts modernos com leitura clara e hierarquia visual.</p>
-      </div>
+          <img src="LOGO 3.png">
+          <h3>Design Digital</h3>
+          <p>Layouts modernos com leitura clara e hierarquia visual.</p>
+        </div>
       </a>
 
       <a href="index4.html">
         <div class="card">
-        <img src="LOGO 4_Prancheta 1_Prancheta 1.png">
-        <h3>Conteúdo Criativo</h3>
-        <p>Artes pensadas para engajar e comunicar.</p>
-      </div>
+          <img src="LOGO 4_Prancheta 1_Prancheta 1.png">
+          <h3>Conteúdo Criativo</h3>
+          <p>Artes pensadas para engajar e comunicar.</p>
+        </div>
       </a>
 
-    <a href="index5.html">
-      <div class="card">
-        <img src="LOGO 5.png">
-        <h3>Projetos 3D</h3>
-        <p>Exploração visual e profundidade estética.</p>
-      </div>
+      <a href="index5.html">
+        <div class="card">
+          <img src="LOGO 5.png">
+          <h3>Projetos 3D</h3>
+          <p>Exploração visual e profundidade e estética.</p>
+        </div>
       </a>
 
-    <a href="index6.html">
-      <div class="card">
-        <img src="LOGO 6.png">
-        <h3>Audiovisual</h3>
-        <p>Experiências audiovisuais criadas para conectar marcas e pessoas.</p>
-      </div>
+      <a href="index6.html">
+        <div class="card">
+          <img src="LOGO 6.png">
+          <h3>Audiovisual</h3>
+          <p>Experiências audiovisuais criadas para conectar marcas e pessoas.</p>
+        </div>
+      </a>
+
     </div>
-    </a>
 
     <div class="controls">
       <button onclick="move(1)">‹</button>
@@ -273,7 +305,6 @@ footer{
     </div>
   </section>
 
-  <!-- TELA 3 -->
   <section class="section">
     <div class="block">
       <h3>Processo</h3>
@@ -281,7 +312,7 @@ footer{
     </div>
     <div class="block">
       <h3>Visão</h3>
-      <p>Design como ferramenta estratégica, não apenas estética.</p>
+      <p>Design como estratégia, não apenas estética.</p>
     </div>
     <div class="block">
       <h3>Compromisso</h3>
@@ -290,6 +321,15 @@ footer{
   </section>
 
 </div>
+
+<!-- CTA -->
+<section class="cta-whatsapp">
+  <h3>Vamos tirar seu projeto do papel?</h3>
+  <p>Entre em contato direto comigo pelo WhatsApp.</p>
+  <a href="https://wa.me/5531996845358" target="_blank">
+    Falar no WhatsApp
+  </a>
+</section>
 
 <footer>
   © 2026 • Designer Vasconcelos
